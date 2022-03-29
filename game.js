@@ -27,10 +27,10 @@ let playRound = (e) => {
   console.log(computerSelection)
   const playerSelection = e.target.dataset.choice;
   console.log(playerSelection);
+
   // If player selects rock and comp selects paper, comp wins
   // If player selects paper and comp selects scissor, comp wins
   // If player selects scissor and comp selects rock, comp wins
-
   if (playerSelection == computerSelection) {
     outcome.textContent = "It's a tie!";
   } else if (
@@ -44,7 +44,7 @@ let playRound = (e) => {
     outcome.textContent = "Yay!! You win the round :D";
     playerScore++;
   }
-  
+
   checkWin();
   endResult.appendChild(result);
   score.textContent = "Player: " + `${playerScore}` + " | " + "Computer: " + `${computerScore}`;
