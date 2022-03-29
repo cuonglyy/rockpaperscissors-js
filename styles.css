@@ -1,0 +1,11 @@
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+#score, #end-result {
+  text-align: center;
+  margin-top: 2em;
+}
